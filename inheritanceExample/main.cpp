@@ -32,9 +32,9 @@ public:
 int main(int argc, const char * argv[]) {
     // insert code here...
 
-    Student std;
-    std.setData(1, "bhadresh");
-    std.Display();
+    Student std1;
+    std1.setData(1, "bhadresh");
+    std1.Display();
     
     return 0;
 }
