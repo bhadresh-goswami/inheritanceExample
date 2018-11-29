@@ -8,8 +8,33 @@
 
 #include <iostream>
 
+class Student{
+
+private:
+    int no;
+    char name[20];
+    
+public:
+    void setData(int no, char name[20])
+    {
+        this->no = no;
+        //this->name = name;
+        strcpy(this->name, name);
+    }
+    
+    void Display()
+    {
+        std::cout << "Value of no is :"<<this->no;
+        std::cout << "\nValue of name is :"<<this->name<<"\n\n";
+    }
+};
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+
+    Student std;
+    std.setData(1, "bhadresh");
+    std.Display();
+    
     return 0;
 }
